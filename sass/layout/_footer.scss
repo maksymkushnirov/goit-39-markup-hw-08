@@ -1,0 +1,100 @@
+.footer {
+  background-color: var(--color-background-primary);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.footer .logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.logo-accent-footer {
+  color: var(--color-white-primary);
+}
+.address {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.list-address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+.link-contacts-footer-address {
+  color: var(--color-white-primary);
+  transition: color 250ms var(--timing-function);
+}
+.link-contacts-footer {
+  color: var(--color-white-secondary);
+}
+.link-contacts-footer-address:hover,
+.link-contacts-footer-address:focus,
+.link-contacts-footer:hover,
+.link-contacts-footer:focus {
+  color: var(--color-accent-primary);
+  transition: color 250ms var(--timing-function);
+}
+.footer-join {
+  margin-left: 70px;
+}
+.footer-join-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-white-primary);
+}
+.footer-join-list-link-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-white-primary);
+}
+.footer-form-container {
+  margin-left: 92px;
+}
+.footer-form {
+  display: flex;
+  align-items: center;
+}
+.footer-form-field {
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  margin-right: 12px;
+  color: var(--color-white-primary);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: var(--shadow-modal-button);
+  border-radius: 4px;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.footer-form-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--color-white-primary);
+  background-color: var(--color-accent-primary);
+  border-color: transparent;
+  border-radius: 4px;
+  box-shadow: var(--shadow-modal-button);
+  cursor: pointer;
+}
+.footer-button-icon {
+  margin-left: 10px;
+}

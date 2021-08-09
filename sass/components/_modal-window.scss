@@ -1,0 +1,36 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 580px;
+  background-color: var(--color-white-primary);
+  box-shadow: var(--shadow-modal);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: background-color 250ms var(--timing-function);
+  transition: box-shadow 250ms var(--timing-function);
+  transition: transform 250ms var(--timing-function);
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.7);
+  }
+}
+.button-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: var(--color-white-primary);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
+  &:focus,
+  &:hover {
+    fill: var(--color-accent-primary);
+  }
+}

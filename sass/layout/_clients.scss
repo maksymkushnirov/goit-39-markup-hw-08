@@ -1,0 +1,64 @@
+.section-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.list-section-сlients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-section-сlients-item {
+  width: 170px;
+  height: 92px;
+}
+.list-section-сlients-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: inherit;
+  height: inherit;
+  border: 1px solid var(--color-icon-primary);
+  border-radius: 4px;
+  transition: border 250ms var(--timing-function),
+    fill 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--color-accent-primary);
+    fill: var(--color-accent-primary);
+    transition: border 250ms var(--timing-function);
+    transition: fill 250ms var(--timing-function);
+  }
+}
+.icon-ya-co {
+  width: 41px;
+  height: 46.7px;
+}
+.icon-company-tag-line-here {
+  width: 40px;
+  height: 52px;
+}
+.icon-company {
+  width: 43.46px;
+  height: 41.18px;
+}
+.icon-foster-peters {
+  width: 84.44px;
+  height: 40.62px;
+}
+.icon-brand {
+  width: 62.54px;
+  height: 45.43px;
+}
+.icon-company-tag-line {
+  width: 93.79px;
+  height: 43.93px;
+}
+.client-icon {
+  fill: var(--color-icon-primary);
+  transition: fill 250ms var(--timing-function);
+  .list-section-сlients-item-link:hover &,
+  .list-section-сlients-item-link:focus & {
+    fill: var(--color-accent-primary);
+    transition: fill 250ms var(--timing-function);
+  }
+}
