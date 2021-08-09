@@ -92,15 +92,15 @@
     transition: border 250ms var(--timing-function);
   }
   .form-checkbox:checked + &::before {
-    background-image: url(../images/icons/icon-check.svg);
+    background-image: url(../../images/icons/icon-check.svg);
     background-repeat: no-repeat;
     background-origin: border-box;
     background-position: center;
-    border-color: transparent;
+    background-color: var(--color-accent-primary);
     background-size: contain;
   }
   .form-checkbox:focus + &::before {
-    border-color: var(--color-accent-primary);
+    border-color: none;
   }
 }
 .checkbox-link {

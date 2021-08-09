@@ -334,16 +334,16 @@ img {
 }
 
 .form-checkbox:checked + .form-checkbox-label::before {
-  background-image: url(../images/icons/icon-check.svg);
+  background-image: url(../../images/icons/icon-check.svg);
   background-repeat: no-repeat;
   background-origin: border-box;
   background-position: center;
-  border-color: transparent;
+  background-color: var(--color-accent-primary);
   background-size: contain;
 }
 
 .form-checkbox:focus + .form-checkbox-label::before {
-  border-color: var(--color-accent-primary);
+  border-color: none;
 }
 
 .checkbox-link {
@@ -394,7 +394,7 @@ img {
   top: 0px;
   width: 100vw;
   height: 100vh;
-  background: red;
+  background: var(--color-white-primary);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   z-index: 100;
   transform: translatex(100%);
