@@ -647,6 +647,7 @@ img {
   background-color: var(--color-background-primary);
   max-width: 1600px;
   margin: 0 auto;
+  padding: 200px 0;
   text-align: center;
   background-size: cover;
   background-position: center;

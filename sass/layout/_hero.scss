@@ -2,7 +2,9 @@
   background-color: var(--color-background-primary);
   max-width: 1600px;
   margin: 0 auto;
+  padding: 200px 0;
   text-align: center;
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,6 +24,7 @@
       ),
       url("../../images/adaptive/hero/hero-1200@2x.jpg");
   }
+
   @media screen and (max-width: 768px) {
     background-image: linear-gradient(
         to right,
@@ -44,6 +47,7 @@
         url("../../images/adaptive/hero/hero-768@2x.jpg");
     }
   }
+
   @media screen and (max-width: 480px) {
     background-image: linear-gradient(
         to right,
@@ -75,6 +79,7 @@
   text-transform: uppercase;
   color: var(--color-white-primary);
   width: 696px;
+  // text-align: center;
   margin: 0 auto;
   margin-bottom: 30px;
 }
