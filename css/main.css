@@ -79,6 +79,8 @@ ol {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .link {
@@ -657,13 +659,13 @@ img {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/adaptive/hero/hero-1200@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/adaptive/hero/hero-1200@2x.jpg");
   }
 }
 
 @media screen and (max-width: 768px) {
   .section-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/adaptive/hero/hero-768.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/adaptive/hero/hero-768.jpg");
     padding: 103px 0px;
     height: 100%;
     max-width: 100%;
@@ -672,13 +674,13 @@ img {
 
 @media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/adaptive/hero/hero-768@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/adaptive/hero/hero-768@2x.jpg");
   }
 }
 
 @media screen and (max-width: 480px) {
   .section-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/adaptive/hero/hero-480.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/adaptive/hero/hero-480.jpg");
     padding: 118px 0px;
     max-height: 100%;
     max-width: 100%;
@@ -687,20 +689,32 @@ img {
 
 @media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
   .section-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/adaptive/hero/hero-480@2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/adaptive/hero/hero-480@2x.jpg");
   }
 }
 
 .title-section-hero {
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-white-primary);
-  width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .title-section-hero {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title-section-hero {
+    width: 696px;
+    font-size: 44px;
+  }
 }
 
 .section-advantages {
