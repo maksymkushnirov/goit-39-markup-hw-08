@@ -162,14 +162,12 @@ img {
   height: 44px;
   border-radius: 50%;
   fill: var(--color-icon-primary);
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
 }
 
 .link-social:hover, .link-social:focus {
   fill: var(--color-white-primary);
   background-color: var(--color-accent-primary);
-  transition: fill 250ms var(--timing-function);
-  transition: background-color 250ms var(--timing-function);
 }
 
 .link-social-item:not(:last-child) {
@@ -236,6 +234,7 @@ img {
   background-color: var(--color-white-primary);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition: fill 250ms var(--function-transition);
   cursor: pointer;
 }
 
@@ -577,7 +576,6 @@ img {
 
 .menu-nav__link:hover, .menu-nav__link:focus, .menu-nav__link.current {
   color: var(--color-accent-primary);
-  transition: color 250ms var(--timing-function);
   position: relative;
 }
 
@@ -639,9 +637,8 @@ img {
   transition: color 250ms var(--timing-function);
 }
 
-.menu-contacts__link:hover, .menu-contacts__link:focus, .menu-contacts__link:hover, .menu-contacts__link:focus {
+.menu-contacts__link:hover, .menu-contacts__link:focus {
   color: var(--color-accent-primary);
-  transition: color 250ms var(--timing-function);
 }
 
 .envelope {
@@ -658,8 +655,6 @@ img {
   margin-right: 10px;
   color: var(--color-main);
   fill: var(--color-main);
-  transition: color 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function);
 }
 
 .menu-contacts__link:hover .envelope,
@@ -667,7 +662,6 @@ img {
 .menu-contacts__link:hover .smartphone,
 .menu-contacts__link:focus .smartphone {
   fill: var(--color-accent-primary);
-  transition: fill 250ms var(--timing-function);
 }
 
 .section-hero {
@@ -1018,14 +1012,11 @@ img {
   height: inherit;
   border: 1px solid var(--color-icon-primary);
   border-radius: 4px;
-  transition: border 250ms var(--timing-function), fill 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function);
 }
 
 .list-section-сlients-item-link:hover, .list-section-сlients-item-link:focus {
   border: 1px solid var(--color-accent-primary);
-  fill: var(--color-accent-primary);
-  transition: border 250ms var(--timing-function);
-  transition: fill 250ms var(--timing-function);
 }
 
 .icon-ya-co {
@@ -1066,7 +1057,6 @@ img {
 .list-section-сlients-item-link:hover .client-icon,
 .list-section-сlients-item-link:focus .client-icon {
   fill: var(--color-accent-primary);
-  transition: fill 250ms var(--timing-function);
 }
 
 .section-examples {
@@ -1098,9 +1088,6 @@ img {
   color: var(--color-white-primary);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  transition: background-color 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function);
 }
 
 .list-section-examples-button {
@@ -1175,8 +1162,6 @@ img {
 
 .list-section-examples-example-item-link:hover, .list-section-examples-example-item-link:focus {
   box-shadow: var(--shadow-section-examples-example-item-hover);
-  transition: color 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function);
 }
 
 .list-section-examples-example-item-box-image {
@@ -1191,7 +1176,6 @@ img {
   width: 100%;
   height: 100%;
   padding: 62px 24px;
-  overflow: auto;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
@@ -1299,6 +1283,7 @@ img {
 
 .link-contacts-footer {
   color: var(--color-white-secondary);
+  transition: color 250ms var(--timing-function);
 }
 
 .link-contacts-footer-address:hover,
@@ -1306,7 +1291,6 @@ img {
 .link-contacts-footer:hover,
 .link-contacts-footer:focus {
   color: var(--color-accent-primary);
-  transition: color 250ms var(--timing-function);
 }
 
 @media screen and (max-width: 767px) {
@@ -1436,6 +1420,5 @@ img {
 
 .footer-join-list-link-social-link:hover, .footer-join-list-link-social-link:focus {
   background-color: var(--color-accent-primary);
-  transition: background-color 250ms var(--timing-function);
 }
 /*# sourceMappingURL=main.css.map */

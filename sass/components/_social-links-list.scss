@@ -11,13 +11,12 @@
   height: 44px;
   border-radius: 50%;
   fill: var(--color-icon-primary);
-  transition: fill 250ms var(--timing-function);
+  transition: fill 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
   &:hover,
   &:focus {
     fill: var(--color-white-primary);
     background-color: var(--color-accent-primary);
-    transition: fill 250ms var(--timing-function);
-    transition: background-color 250ms var(--timing-function);
   }
 }
 .link-social-item:not(:last-child) {

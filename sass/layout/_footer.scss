@@ -49,13 +49,13 @@
 }
 .link-contacts-footer {
   color: var(--color-white-secondary);
+  transition: color 250ms var(--timing-function);
 }
 .link-contacts-footer-address:hover,
 .link-contacts-footer-address:focus,
 .link-contacts-footer:hover,
 .link-contacts-footer:focus {
   color: var(--color-accent-primary);
-  transition: color 250ms var(--timing-function);
 }
 .footer-join {
   @media screen and (max-width: 767px) {
@@ -164,6 +164,5 @@
   &:hover,
   &:focus {
     background-color: var(--color-accent-primary);
-    transition: background-color 250ms var(--timing-function);
   }
 }
