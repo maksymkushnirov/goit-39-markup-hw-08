@@ -43,6 +43,21 @@
   overflow: hidden;
 }
 
+.visually-hidden__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  bottom: 87px;
+  left: 21px;
+}
+
 body {
   font-family: var(--font-family-primary), sans-serif;
   color: var(--color-main);
@@ -201,6 +216,7 @@ img {
   transition: background-color 250ms var(--timing-function);
   transition: box-shadow 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
+  padding: 40px;
 }
 
 .backdrop.is-hidden .modal {
@@ -230,7 +246,7 @@ img {
 .modal-form {
   display: flex;
   flex-direction: column;
-  margin: 40px;
+  position: relative;
 }
 
 .form-title {
@@ -434,6 +450,12 @@ img {
   height: 40px;
   border: transparent;
   cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  position: absolute;
 }
 
 .mobile-menu-list__item:not(:last-child),
@@ -462,16 +484,16 @@ img {
 }
 
 .tel {
-  font-size: 8px;
-  font-weight: 500px;
-  line-height: 40px;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.3;
   color: var(--color-accent-primary);
 }
 
 .mail {
   font-size: 24px;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 1.1;
   color: var(--color-main);
 }
 
@@ -540,10 +562,6 @@ img {
   display: flex;
 }
 
-.menu-nav__item {
-  position: relative;
-}
-
 .menu-nav__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -560,6 +578,7 @@ img {
 .menu-nav__link:hover, .menu-nav__link:focus, .menu-nav__link.current {
   color: var(--color-accent-primary);
   transition: color 250ms var(--timing-function);
+  position: relative;
 }
 
 .menu-nav__link.current::after {
@@ -567,11 +586,17 @@ img {
   display: block;
   justify-content: center;
   position: absolute;
-  top: 50px;
+  bottom: -36px;
   width: 100%;
   height: 4px;
   border-radius: 2px;
   background-color: var(--color-accent-primary);
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-nav__link.current::after {
+    bottom: -31px;
+  }
 }
 
 .menu-contacts {

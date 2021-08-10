@@ -11,6 +11,7 @@
   transition: background-color 250ms var(--timing-function);
   transition: box-shadow 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
+  padding: 40px;
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.7);
   }
