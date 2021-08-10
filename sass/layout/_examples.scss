@@ -4,7 +4,7 @@
     padding: 94px 0;
   }
 }
-.button-section-examples {
+.filters___btn {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -28,7 +28,7 @@
     border-radius: 4px;
   }
 }
-.list-section-examples-button {
+.filters__list {
   display: flex;
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
@@ -40,18 +40,18 @@
   }
   margin-bottom: 50px;
 }
-.list-section-examples-button-item {
+.filters__item {
   @media screen and (max-width: 767px) {
     margin-top: 15px;
     margin-left: 8px;
   }
-}
-.list-section-examples-button-item:not(:last-child) {
-  @media screen and (min-width: 768px) {
-    margin-right: 8px;
+  &:not(:last-child) {
+    @media screen and (min-width: 768px) {
+      margin-right: 8px;
+    }
   }
 }
-.list-section-examples-example {
+.projects__list {
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +59,7 @@
     margin-top: -30px;
   }
 }
-.list-section-examples-example-item {
+.projects__item {
   @media screen and (min-width: 768px) {
     margin-left: 30px;
     margin-top: 30px;
@@ -77,7 +77,7 @@
     }
   }
 }
-.list-section-examples-example-item-link {
+.projects__link {
   display: flex;
   flex-direction: column;
   transition: box-shadow 250ms var(--timing-function);
@@ -86,11 +86,11 @@
     box-shadow: var(--shadow-section-examples-example-item-hover);
   }
 }
-.list-section-examples-example-item-box-image {
+.projects__thumb {
   position: relative;
   overflow: hidden;
 }
-.list-section-examples-example-item-box-overlay-text {
+.projects__overlay {
   display: block;
   position: absolute;
   bottom: 0;
@@ -106,18 +106,18 @@
   transition: color 250ms var(--timing-function);
   transition: background-color 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
-  .list-section-examples-example-item-link:hover &,
-  .list-section-examples-example-item-link:focus & {
+  .projects__link:hover &,
+  .projects__link:focus & {
     transform: translateY(0);
   }
 }
-.list-section-examples-example-item-text {
+.projects__box {
   flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
 }
-.list-section-examples-example-item-title {
+.projects__title {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -125,7 +125,7 @@
   color: var(--color-dark-primary);
   margin-bottom: 4px;
 }
-.list-section-examples-example-item-description {
+.projects__description {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
