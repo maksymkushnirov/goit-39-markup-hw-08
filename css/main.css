@@ -205,7 +205,8 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 580px;
+  height: 100vh;
+  overflow-y: auto;
   background-color: var(--color-white-primary);
   box-shadow: var(--shadow-modal);
   border-radius: 4px;
