@@ -205,6 +205,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
+  overflow-y: auto;
   background-color: var(--color-white-primary);
   box-shadow: var(--shadow-modal);
   border-radius: 4px;
@@ -215,16 +216,10 @@ img {
   padding: 40px;
 }
 
-@media screen and (min-height: 0px) {
+@media screen and (max-height: 690px) {
   .modal {
     height: 100vh;
     overflow-y: auto;
-  }
-}
-
-@media screen and (min-height: 580px) {
-  .modal {
-    height: 580px;
   }
 }
 

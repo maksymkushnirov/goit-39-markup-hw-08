@@ -4,6 +4,7 @@
   left: 50%;
   // width: 528px;
   // height: 580px;
+  overflow-y: auto;
   background-color: var(--color-white-primary);
   box-shadow: var(--shadow-modal);
   border-radius: 4px;
@@ -12,12 +13,9 @@
   transition: box-shadow 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
   padding: 40px;
-  @media screen and (min-height: 0px) {
+  @media screen and (max-height: 690px) {
     height: 100vh;
     overflow-y: auto;
-  }
-  @media screen and (min-height: 580px) {
-    height: 580px;
   }
   .backdrop.is-hidden & {
     transform: translate(-50%, -50%) scale(0.7);
