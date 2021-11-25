@@ -93,7 +93,7 @@
     transition: border 250ms var(--timing-function);
   }
   .form-checkbox:checked + &::before {
-    background-image: url(../../images/icons/icon-check.svg);
+    background-image: url(../images/icons/icon-check.svg);
     background-repeat: no-repeat;
     background-origin: border-box;
     background-position: center;
