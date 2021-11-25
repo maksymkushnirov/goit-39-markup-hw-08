@@ -335,7 +335,7 @@ img {
 }
 
 .form-checkbox-label {
-  display: flex;
+  display: flexbox;
   justify-content: center;
   align-items: center;
   position: relative;
