@@ -349,6 +349,8 @@ img {
   display: block;
   width: 16px;
   height: 15px;
+  flex-grow: o;
+  flex-shrink: 0;
   margin-right: 7px;
   content: "";
   border: 2px solid var(--color-dark-primary);
